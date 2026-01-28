@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigCom Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="logo">BigCom<span>.</span></div>
+            <nav>
+                <a href="#" class="nav-item active">Overview</a>
+                <a href="#" class="nav-item">Orders</a>
+                <a href="#" class="nav-item">Products</a>
+                <a href="#" class="nav-item">Customers</a>
+                <a href="#" class="nav-item">Reports</a>
+                <a href="#" class="nav-item">Settings</a>
+            </nav>
+            <div class="user-footer">
+                <div class="user-info">
+                    <div class="avatar">JD</div>
+                    <span>John Doe</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <h1>Dashboard Overview</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search data...">
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <p class="label">Total Revenue</p>
+                    <p class="value">$128,430</p>
+                    <span class="trend positive">+12% vs last month</span>
+                </div>
+                <div class="stat-card">
+                    <p class="label">Active Orders</p>
+                    <p class="value">412</p>
+                    <span class="trend positive">+5% increase</span>
+                </div>
+                <div class="stat-card">
+                    <p class="label">Total Products</p>
+                    <p class="value">1,204</p>
+                    <span class="trend">Stable</span>
+                </div>
+                <div class="stat-card">
+                    <p class="label">New Customers</p>
+                    <p class="value">89</p>
+                    <span class="trend positive">+22% spike</span>
+                </div>
+            </section>
+
+            <section class="table-container">
+                <h3>Recent Orders</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Status</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#BC-9901</td>
+                            <td>Alex Johnson</td>
+                            <td><span class="status shipped">Shipped</span></td>
+                            <td>$299.00</td>
+                            <td>Jan 28, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>#BC-9902</td>
+                            <td>Sarah Miller</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td>$1,420.50</td>
+                            <td>Jan 27, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>#BC-9903</td>
+                            <td>Mike Peters</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                            <td>$85.00</td>
+                            <td>Jan 27, 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
